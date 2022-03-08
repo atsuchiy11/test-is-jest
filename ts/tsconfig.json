@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		// jsファイルもインポートする
+		"allowJs": true,
+		"baseUrl": "./",
+		// ESMとCJSの互換
+		"esModuleInterop": true,
+		// 大文字/小文字を区別する
+		"forceConsistentCasingInFileNames": true,
+		// Next.jsは必須
+		// "isolatedModules": true,
+		// JSX構文の変換
+		"jsx": "react",
+		// 使用するAPI
+		"lib": ["DOM", "ESNext"],
+		// エクスポート/インポート
+		"module": "CommonJS",
+		// モジュール解決
+		"moduleResolution": "Node",
+		// コンパイルしたファイルを出力しない
+		// "noEmit": true,
+		// jsonをインポートする
+		"resolveJsonModule": true,
+		// 型定義ファイルのチェックをスキップする
+		"skipLibCheck": true,
+		// ソースマップを有効にする
+		"sourceMap": true,
+		// strictモード
+		"strict": true,
+		// トランスパイルするバージョン
+		"target": "esnext"
+	},
+	// "include": ["./src/**/*"],
+	"include": ["**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules"]
+}

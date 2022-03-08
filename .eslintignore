@@ -1,0 +1,6 @@
+**/dist/
+**/public/
+**/*.config.js
+**/node_modules
+**/yarn.lock
+**/package-lock.json
