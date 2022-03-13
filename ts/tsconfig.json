@@ -10,7 +10,7 @@
 		// Next.jsは必須
 		// "isolatedModules": true,
 		// JSX構文の変換
-		"jsx": "react",
+		"jsx": "preserve",
 		// 使用するAPI
 		"lib": ["DOM", "ESNext"],
 		// エクスポート/インポート
@@ -28,7 +28,10 @@
 		// strictモード
 		"strict": true,
 		// トランスパイルするバージョン
-		"target": "esnext"
+		"target": "esnext",
+		"noEmit": true,
+		"incremental": true,
+		"isolatedModules": true
 	},
 	// "include": ["./src/**/*"],
 	"include": ["**/*.ts", "**/*.tsx"],

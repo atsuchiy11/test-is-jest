@@ -1,0 +1,28 @@
+// import React from "react"
+// import { screen, render, fireEvent } from "@testing-library/react"
+// import { getPage } from "next-page-tester"
+// import IndexPage from "src/pages/index"
+
+// describe("/index", () => {
+// 	// test("snapshot", () => {
+// 	// 	const { asFragment } = render(<IndexPage />)
+// 	// 	expect(asFragment()).toMatchSnapshot
+// 	// })
+
+// 	test("/index rendered", () => {
+// 		render(<IndexPage />)
+// 		expect(screen.getByTestId("title")).toBeInTheDocument()
+// 		expect(screen.getByTestId("start-btn")).toBeInTheDocument()
+// 	})
+
+// 	test("Link button pushed", async () => {
+// 		// 指定したルートに遷移した時のDOMを取得する
+// 		const { page } = await getPage({ route: "/index" })
+// 		// 取得したDOMをレンダリング
+// 		render(page)
+// 		// イベント発火
+// 		fireEvent.click(screen.getByTestId("start-btn"))
+// 		// ページ遷移したか検証する
+// 		expect(await screen.findByText(/Problem #1/)).toBeInTheDocument()
+// 	})
+// })

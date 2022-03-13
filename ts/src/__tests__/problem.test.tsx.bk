@@ -1,0 +1,12 @@
+// import { screen, render } from "@testing-library/react"
+// import { getPage } from "next-page-tester"
+
+// describe("/broblem", () => {
+// 	test("/problem rendered", async () => {
+// 		const { page } = await getPage({ route: "/problem#1" })
+// 		render(page)
+// 		expect(await (await screen.findByTestId("title")).textContent).toBe(
+// 			"Problem #1"
+// 		)
+// 	})
+// })
