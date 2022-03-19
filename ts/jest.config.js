@@ -8,11 +8,15 @@ const createJestConfig = nextJest({ dir: "./src" })
 const customJestConfig = {
 	testPathIgnorePatterns: ["<rootDir>/.next", "<rootDir>/node_modules"],
 	moduleDirectories: ["node_modules", "<rootDir>/"],
-	// moduleNameMapper: {
-	// 	"\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
-	// },
+	moduleNameMapper: {
+		"\\.(css|less|sass|scss)$": "identity-obj-proxy",
+		"\\.(gif|ttf|eot|svg|png)$": "<rootDir>/test/__mocks__/fileMock.js",
+	},
+
 	testEnvironment: "jest-environment-jsdom",
 	setupFilesAfterEnv: ["<rootDir>/jest-setup.js"],
+	clearMocks: true,
+	restoreMocks: true,
 }
 module.exports = createJestConfig(customJestConfig)
 

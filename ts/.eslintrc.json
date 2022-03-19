@@ -27,7 +27,8 @@
 				"varsIgnorePattern": "^_",
 				"caughtErrorsIgnorePattern": "^_" // catchブロック
 			}
-		]
+		],
+		"@typescript-eslint/no-var-requires": "off"
 	},
 	"settings": {
 		"react": { "version": "detect" }

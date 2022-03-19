@@ -1,5 +1,5 @@
 import "isomorphic-fetch"
-import { Post } from "src/interfaces/Types"
+import { Post, Task } from "src/interfaces/Types"
 
 const endpoint = "https://jsonplaceholder.typicode.com"
 
@@ -11,7 +11,7 @@ export const getAllPostData = async () => {
 
 export const getAllTasksData = async () => {
 	const res = await fetch(`${endpoint}/todos?_limit=10`)
-	const todos = await res.json()
+	const todos: Task[] = await res.json()
 	return todos
 }
 

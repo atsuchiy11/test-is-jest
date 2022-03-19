@@ -7,10 +7,11 @@ export interface Post {
 export interface Comment {
 	postId: number
 	id: number
+	name: string
 	email: string
 	body: string
 }
-export interface Todos {
+export interface Task {
 	userId: number
 	id: number
 	title: string
